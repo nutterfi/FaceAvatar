@@ -11,6 +11,16 @@
 		291FBCDD2849BBBC0052E954 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291FBCDC2849BBBC0052E954 /* ContentView.swift */; };
 		291FBCDF2849BBBD0052E954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291FBCDE2849BBBD0052E954 /* Assets.xcassets */; };
 		291FBCE22849BBBD0052E954 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291FBCE12849BBBD0052E954 /* Preview Assets.xcassets */; };
+		291FBCEA2849BBDB0052E954 /* Shapes in Frameworks */ = {isa = PBXBuildFile; productRef = 291FBCE92849BBDB0052E954 /* Shapes */; };
+		291FBCEC2849BC130052E954 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 291FBCEB2849BC130052E954 /* README.md */; };
+		291FBCEE2849BC770052E954 /* Head.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291FBCED2849BC770052E954 /* Head.swift */; };
+		291FBCF02849C1F00052E954 /* Eye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291FBCEF2849C1F00052E954 /* Eye.swift */; };
+		291FBCF22849C25D0052E954 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291FBCF12849C25D0052E954 /* Avatar.swift */; };
+		291FBCF42849C79C0052E954 /* Nose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291FBCF32849C79C0052E954 /* Nose.swift */; };
+		291FBCF62849C8700052E954 /* Mouth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291FBCF52849C8700052E954 /* Mouth.swift */; };
+		291FBCF92849CA7A0052E954 /* AvatarParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291FBCF82849CA7A0052E954 /* AvatarParams.swift */; };
+		291FBCFB2849CC3E0052E954 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291FBCFA2849CC3E0052E954 /* Color+Extensions.swift */; };
+		291FBCFD2849D0D10052E954 /* EyeRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291FBCFC2849D0D10052E954 /* EyeRegion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,15 @@
 		291FBCDC2849BBBC0052E954 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		291FBCDE2849BBBD0052E954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		291FBCE12849BBBD0052E954 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		291FBCEB2849BC130052E954 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		291FBCED2849BC770052E954 /* Head.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Head.swift; sourceTree = "<group>"; };
+		291FBCEF2849C1F00052E954 /* Eye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eye.swift; sourceTree = "<group>"; };
+		291FBCF12849C25D0052E954 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
+		291FBCF32849C79C0052E954 /* Nose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nose.swift; sourceTree = "<group>"; };
+		291FBCF52849C8700052E954 /* Mouth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouth.swift; sourceTree = "<group>"; };
+		291FBCF82849CA7A0052E954 /* AvatarParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarParams.swift; sourceTree = "<group>"; };
+		291FBCFA2849CC3E0052E954 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		291FBCFC2849D0D10052E954 /* EyeRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeRegion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291FBCEA2849BBDB0052E954 /* Shapes in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +71,14 @@
 		291FBCD92849BBBC0052E954 /* FaceAvatar */ = {
 			isa = PBXGroup;
 			children = (
-				291FBCDA2849BBBC0052E954 /* FaceAvatarApp.swift */,
+				291FBCFE2849D1F60052E954 /* Extensions */,
+				291FBCF72849CA700052E954 /* Model */,
+				291FBCFF2849D1FF0052E954 /* Views */,
 				291FBCDC2849BBBC0052E954 /* ContentView.swift */,
 				291FBCDE2849BBBD0052E954 /* Assets.xcassets */,
+				291FBCDA2849BBBC0052E954 /* FaceAvatarApp.swift */,
 				291FBCE02849BBBD0052E954 /* Preview Content */,
+				291FBCEB2849BC130052E954 /* README.md */,
 			);
 			path = FaceAvatar;
 			sourceTree = "<group>";
@@ -65,6 +89,35 @@
 				291FBCE12849BBBD0052E954 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		291FBCF72849CA700052E954 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				291FBCF82849CA7A0052E954 /* AvatarParams.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		291FBCFE2849D1F60052E954 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				291FBCFA2849CC3E0052E954 /* Color+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		291FBCFF2849D1FF0052E954 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				291FBCF12849C25D0052E954 /* Avatar.swift */,
+				291FBCED2849BC770052E954 /* Head.swift */,
+				291FBCEF2849C1F00052E954 /* Eye.swift */,
+				291FBCFC2849D0D10052E954 /* EyeRegion.swift */,
+				291FBCF32849C79C0052E954 /* Nose.swift */,
+				291FBCF52849C8700052E954 /* Mouth.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +136,9 @@
 			dependencies = (
 			);
 			name = FaceAvatar;
+			packageProductDependencies = (
+				291FBCE92849BBDB0052E954 /* Shapes */,
+			);
 			productName = FaceAvatar;
 			productReference = 291FBCD72849BBBC0052E954 /* FaceAvatar.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +167,9 @@
 				Base,
 			);
 			mainGroup = 291FBCCE2849BBBC0052E954;
+			packageReferences = (
+				291FBCE82849BBDB0052E954 /* XCRemoteSwiftPackageReference "Shapes" */,
+			);
 			productRefGroup = 291FBCD82849BBBC0052E954 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291FBCEC2849BC130052E954 /* README.md in Resources */,
 				291FBCE22849BBBD0052E954 /* Preview Assets.xcassets in Resources */,
 				291FBCDF2849BBBD0052E954 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +197,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291FBCF92849CA7A0052E954 /* AvatarParams.swift in Sources */,
+				291FBCEE2849BC770052E954 /* Head.swift in Sources */,
+				291FBCFB2849CC3E0052E954 /* Color+Extensions.swift in Sources */,
 				291FBCDD2849BBBC0052E954 /* ContentView.swift in Sources */,
+				291FBCF42849C79C0052E954 /* Nose.swift in Sources */,
+				291FBCFD2849D0D10052E954 /* EyeRegion.swift in Sources */,
 				291FBCDB2849BBBC0052E954 /* FaceAvatarApp.swift in Sources */,
+				291FBCF22849C25D0052E954 /* Avatar.swift in Sources */,
+				291FBCF02849C1F00052E954 /* Eye.swift in Sources */,
+				291FBCF62849C8700052E954 /* Mouth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +405,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		291FBCE82849BBDB0052E954 /* XCRemoteSwiftPackageReference "Shapes" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nutterfi/Shapes";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		291FBCE92849BBDB0052E954 /* Shapes */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 291FBCE82849BBDB0052E954 /* XCRemoteSwiftPackageReference "Shapes" */;
+			productName = Shapes;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 291FBCCF2849BBBC0052E954 /* Project object */;
 }
