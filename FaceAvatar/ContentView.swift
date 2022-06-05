@@ -14,6 +14,10 @@ struct ContentView: View {
   @State private var eyeColor = Color.nutterfiEye
   @State private var eyeOffsetX = 0.25
   @State private var eyeOffsetY = 0.0
+  
+  @State private var selectedHeadPreset: HeadPreset?
+  
+  @State private var headPresetViewModel = HeadPresetViewModel()
 
   var params: AvatarParams {
     AvatarParams(
@@ -22,29 +26,88 @@ struct ContentView: View {
     )
   }
   
-  var body: some View {
+  var eyeControls: some View {
     VStack {
-      Avatar(params: params)
+      HStack {
+        ColorPicker("Eye Color", selection: $eyeColor)
+      }
       
-      Spacer()
-      
+      VStack(alignment: .leading) {
+        Text("Eye position")
+        HStack {
+          Text("Gap Distance")
+          Slider(value: $eyeOffsetX, in: 0.25...0.4) {
+            Text("Gap Distance")
+          } minimumValueLabel: {
+            Text("")
+          } maximumValueLabel: {
+            Text("")
+          }
+          
+        }
+        
+        HStack {
+          Text("Height")
+          Slider(value: $eyeOffsetY, in: -0.5...0.5) {
+            Text("Height")
+          } minimumValueLabel: {
+            Text("")
+          } maximumValueLabel: {
+            Text("")
+          }
+        }
+      }
+    }
+  }
+  
+  var facePresets: some View {
+    // Face Presets
+    VStack {
+      Text("Face Presets")
+      HStack {
+        ForEach(headPresetViewModel.presets) { preset in
+          EmptyView()
+          VStack {
+            Head(faceRoundness: preset.faceRoundness)
+              .onTapGesture {
+                selectedHeadPreset = preset
+                faceRoundness = preset.faceRoundness
+              }
+              .border(selectedHeadPreset == preset ? Color.black : Color.clear)
+            
+            Text("\(String.init(describing: preset))")
+          }
+        }
+      }
+    }
+    .border(Color.black)
+  }
+  
+  var faceControls : some View {
+    // parameters menu
+    VStack {
+      facePresets
       HStack {
         Text("Face Roundness")
         Slider(value: $faceRoundness)
       }
-      
       ColorPicker("Skin Tone", selection: $skinTone)
-      
-      
-      HStack {
-        ColorPicker("Eye Color", selection: $eyeColor)
+    }
+  }
+  
+  var body: some View {
+    VStack {
+      Avatar(params: params)
+        
+      VStack {
+        faceControls
+        Divider()
+        eyeControls
       }
-      Slider(value: $eyeOffsetX, in: 0.25...0.4)
-      Slider(value: $eyeOffsetY, in: -0.5...0.5)
       
-      Spacer()
     }
     .padding()
+    .background(Color.gray)
   }
 }
 

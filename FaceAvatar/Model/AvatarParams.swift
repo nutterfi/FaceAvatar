@@ -26,7 +26,9 @@ struct EyeParams {
 }
 
 struct NoseParams {
-  
+  var width: Double
+  var height: Double
+  var offset: CGPoint = CGPoint(x: 0, y: 0)
 }
 
 struct HeadParams {

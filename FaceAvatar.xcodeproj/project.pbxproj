@@ -21,6 +21,7 @@
 		291FBCF92849CA7A0052E954 /* AvatarParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291FBCF82849CA7A0052E954 /* AvatarParams.swift */; };
 		291FBCFB2849CC3E0052E954 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291FBCFA2849CC3E0052E954 /* Color+Extensions.swift */; };
 		291FBCFD2849D0D10052E954 /* EyeRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291FBCFC2849D0D10052E954 /* EyeRegion.swift */; };
+		2960BF3B284C5C3100E17BDF /* Preset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960BF3A284C5C3100E17BDF /* Preset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		291FBCF82849CA7A0052E954 /* AvatarParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarParams.swift; sourceTree = "<group>"; };
 		291FBCFA2849CC3E0052E954 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		291FBCFC2849D0D10052E954 /* EyeRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeRegion.swift; sourceTree = "<group>"; };
+		2960BF3A284C5C3100E17BDF /* Preset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				291FBCF82849CA7A0052E954 /* AvatarParams.swift */,
+				2960BF3A284C5C3100E17BDF /* Preset.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				291FBCFD2849D0D10052E954 /* EyeRegion.swift in Sources */,
 				291FBCDB2849BBBC0052E954 /* FaceAvatarApp.swift in Sources */,
 				291FBCF22849C25D0052E954 /* Avatar.swift in Sources */,
+				2960BF3B284C5C3100E17BDF /* Preset.swift in Sources */,
 				291FBCF02849C1F00052E954 /* Eye.swift in Sources */,
 				291FBCF62849C8700052E954 /* Mouth.swift in Sources */,
 			);

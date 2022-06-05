@@ -16,7 +16,7 @@ struct Head: Shape {
     let oldMin: Double = 0
     let oldMax: Double = 1
     let newMax: Double = 179
-    let newMin: Double = 61
+    let newMin: Double = 65 // 61 is the true min but we don't want a razor sharp chin
     
     return ( (oldValue - oldMin) / (oldMax - oldMin) ) * (newMax - newMin) + newMin
   }
